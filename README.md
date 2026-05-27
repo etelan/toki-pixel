@@ -1,4 +1,4 @@
-# toki_pona
+# toki_pixel
 
 Tiny Toki Pona Pixoo sender.
 
