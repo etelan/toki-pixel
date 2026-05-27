@@ -1,0 +1,41 @@
+from __future__ import annotations
+
+"""Tiny-folder-local settings for the standalone Toki Pona Pixoo sender."""
+
+from pathlib import Path
+
+
+DEFAULT_PIXOO_IP = "192.168.4.20"
+DEFAULT_DISPLAY_SIZE = 64
+DEFAULT_DEBUG = False
+DEFAULT_FONT_PATH = Path(__file__).with_name("fairfax-pona.ttf")
+DEFAULT_TIMED_DELAY_SECONDS = 2.0
+
+BACKGROUND = (0, 0, 0)
+FOREGROUND = (255, 255, 255)
+WORD_COLOR = (255, 149, 214)
+MEANING_COLOR = (120, 208, 255)
+
+CARD_SYMBOL_FONT_SCALE = 0.5
+CARD_WORD_FONT_SCALE = 0.19
+CARD_MEANING_FONT_SCALE = 0.16
+CARD_MIN_SYMBOL_FONT_SIZE = 12
+CARD_MIN_WORD_FONT_SIZE = 9
+CARD_MIN_MEANING_FONT_SIZE = 8
+CARD_MIN_WORD_FIT_SIZE = 9
+CARD_MIN_MEANING_FIT_SIZE = 9
+CARD_SYMBOL_DEFAULT_SCALE = 0.42
+CARD_SYMBOL_GAP = 1
+CARD_TEXT_GAP = 2
+CARD_TEXT_SIDE_PADDING = 4
+CARD_TEXT_BOTTOM_PADDING = 2
+CARD_GLYPH_AREA_PADDING = 2
+CARD_MEANING_LINE_GAP = 1
+
+GLYPH_SCALE_OVERRIDES: dict[str, float] = {
+    "kijetesantakalu": 0.55,
+}
+
+TITLE_LINE_OVERRIDES: dict[str, tuple[str, ...]] = {
+    "kijetesantakalu": ("kijete-", "santakalu"),
+}
